@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/src/output.css" />
+    <style>
+        body {
+        background-image: url('./assets/images/route3.jpg');
+        background-size: cover; /* Ajuste l'image pour couvrir toute la div */
+        background-position: center; /* Centre l'image */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-custom-image sm:grid-cols-2">
+    <div class="content-card">
+        <div class="top-0 h-screen sticky">
+              <ul class="py-2 px-2 space-y-1 min-h-[30rem] max-w-[7.38rem] bg-white font-bold text-[10px] border uppercase border-gray-200 rounded-br-xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <li>
+                  <a href="./index.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/house-chimney.png" alt="image" srcset="">
+                    <span>accueil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./affichage.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/legal.png" alt="image" srcset="">
+                    <span>affichage legal</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./site.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-green-200 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/site-alt.png" alt="image" srcset="">
+                    <span>site internet</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./agenda.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/diary-clasp.png" alt="image" srcset="">
+                    <span>agenda</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./enquete.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/discover.png" alt="image" srcset="">
+                    <span>enquête publique</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./annuaire.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/folder-directory.png" alt="image" srcset="">
+                    <span>annuaire</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./demande.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/daily-calendar.png" alt="image" srcset="">
+                    <span>demande de rdv</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./formulaire.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/form.png" alt="image" srcset="">
+                    <span>formulaire</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./signalement.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/shield-exclamation.png" alt="image" srcset="">
+                    <span>signalement</span>
+                  </a>
+                </li>
+              </ul>
+            <div>
+            </div>
+        </div> 
+    </div>
+    
+    <button class="md:hidden w-10 fixed m-4"
+    onclick="showOrHideComponent('mobileViewMenu')">
+      <img src="./assets/images/menu.svg" alt="" srcset="" class="" />
+    </button>
+    <!-- Mobile View Menu -->
+    <div id="mobileViewMenu" class="absolute hidden z-50 top-14 left-0 w-full p-4 rounded-md bg-white slideIn">
+      <ul>
+        <li>
+          <a href="/"  class="flex items-center justify-between w-full mb-4 text-base hover:text-[#628e2f]">
+            <div class="flex items-center justify-center gap-x-2 text-[#628e2f]">
+              <div class="w-1 h-6 bg-black"></div>
+              <p>Accueil</p>
+            </div>
+            <p class="text-2xl">.</p>
+          </a>
+        </li>
+        <li>
+          <a href="/pages/about.html" class="flex items-center justify-between w-full mb-4 text-base hover:text-[#628e2f]">
+            <div class="flex items-center justify-center gap-x-2">
+              <div class="w-1 h-6 bg-black"></div>
+              <p>A Propos</p>
+            </div>
+            <p class="text-2xl">.</p>
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+
+    <div class="flex-col md:m-8">
+      <div class="flex w-full justify-center items-center">
+          <div>
+            <h2 class="font-normal text-white uppercase text-sm p-2">dossier(s)</h2>
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              
+              <a href="./site.html" class="group block lg:min-w-sm max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                <div class="flex items-center space-x-3">
+                    <img class="h-8 mb-2" src="./assets/images/icons/site-alt.png" alt="image" srcset="">
+                    <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold">Conseil municipal</h3>
+                </div>
+                <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                
+                <button href="#" class="inline-flex items-center px-3 py-2 text-xs font-medium rounded-lg text-green-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
+                  documents
+                </button>
+              </a>
+            </div>  
+          </div>
+      </div> 
+      <div class="flex w-full justify-center items-center">
+          <div>
+            <h2 class="font-normal text-white uppercase text-sm pb-2 pt-4">site(s)</h2>
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+              <a href="./site.html" class="group block w-[24rem] max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                <div class="flex items-center space-x-3">
+                    <img class="h-8 mb-2" src="./assets/images/icons/site-alt.png" alt="image" srcset="">
+                    <h3 class="text-slate-900 group-hover:text-white text-lg font-semibold">Conseil municipal</h3>
+                </div>
+                <p class="text-slate-500 group-hover:text-white text-lg">Article de test</p>
+                
+                <button href="#" class="inline-flex items-center px-3 py-2 text-xs font-medium rounded-lg text-green-800 bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
+                  documents
+                </button>
+              </a>
+              
+            </div>  
+          </div>
+      </div>
+    </div>
+    
+    <script>
+      function showOrHideComponent(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+</body>
+</html>

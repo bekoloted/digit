@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/src/output.css" />
+    <style>
+        body {
+        background-image: url('./assets/images/route3.jpg');
+        background-size: cover; /* Ajuste l'image pour couvrir toute la div */
+        background-position: center; /* Centre l'image */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-custom-image">
+    <div class="content-card">
+        <div class="self-center sticky">
+            <ul class="py-2 px-2 space-y-1 min-h-[20rem] w-[13rem] bg-white font-bold text-[10px] border uppercase border-gray-200 rounded-r-xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <li>
+                    <a href="./affichage.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg px-6 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                        <img class="h-20 object-cover mb-2" src="./assets/images/logo.png" alt="image" srcset="">
+                        <span class="mb-4 text-2xl font-normal">Lundi 02 Août 2024</span>
+                        <span class="text-4xl font-semibold">13:30</span>
+                    </a>
+                </li>
+            </ul>
+            <div>
+            </div>
+        </div> 
+    </div>
+    <div class="flex w-full md:m-8 justify-center items-center">
+        <div>
+            <h2 class="text-center font-bold text-white text-3xl p-4">Consultation de l'affichage légal</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="./affichage.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/legal.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">Affichage legale</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+                <a href="./site.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/site-alt.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">Site internet</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+                <a href="./agenda.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/diary-clasp.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">Agenda</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+                <a href="./enquete.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/discover.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">Enquête publique</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+                <a href="./annuaire.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/folder-directory.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">Annuaire</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+                <a href="./demande.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/daily-calendar.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">Demande de rdv</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+                <a href="./formulaire.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/form.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">Formulaire</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+                <a href="signalement.html" class="group block max-w-sm mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div class="flex items-center space-x-3">
+                        <img class="h-8 mb-2" src="./assets/images/icons/shield-exclamation.png" alt="image" srcset="">
+                        <h3 class="text-slate-900 group-hover:text-white text-base font-semibold">signalement</h3>
+                    </div>
+                    <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+                </a>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

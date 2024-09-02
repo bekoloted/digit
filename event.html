@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/src/output.css" />
+    <style>
+        body {
+        background-image: url('./assets/images/route3.jpg');
+        background-size: cover; /* Ajuste l'image pour couvrir toute la div */
+        background-position: center; /* Centre l'image */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-custom-image">
+    <div class="content-card">
+        <div class="top-0 h-screen">
+            <ul class="py-2 px-2 space-y-1 min-h-[30rem] max-w-[7.38rem] bg-white font-bold text-[10px] border uppercase border-gray-200 rounded-br-xl shadow dark:bg-gray-800 dark:border-gray-700">
+                <li>
+                  <a href="./index.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/house-chimney.png" alt="image" srcset="">
+                    <span>accueil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./affichage.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/legal.png" alt="image" srcset="">
+                    <span>Affichage légal</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./projet.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/site-alt.png" alt="image" srcset="">
+                    <span>site internet</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./projet.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/diary-clasp.png" alt="image" srcset="">
+                    <span>agenda</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./projet.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/discover.png" alt="image" srcset="">
+                    <span>enquête publique</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./projet.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/folder-directory.png" alt="image" srcset="">
+                    <span>annuaire</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./projet.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/daily-calendar.png" alt="image" srcset="">
+                    <span>demande de rdv</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./projet.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/form.png" alt="image" srcset="">
+                    <span>formulaire</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./projet.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                    <img class="h-8 mb-2" src="./assets/images/icons/shield-exclamation.png" alt="image" srcset="">
+                    <span>signalement</span>
+                  </a>
+                </li>
+              </ul>
+            <div>
+            </div>
+        </div> 
+        <div class="flex flex-col m-8">
+            
+            <h2 class="text-center font-bold text-3xl p-4">Consultation de l'affichage légal</h2>
+            
+            <div class="grid grid-cols-3 gap-2">
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Conseil municipal</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Compte rendu, délibérations et décisions du maire</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg text-green-800 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">
+                            documents
+                        </a>
+                    </div>
+                </div>
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Arrêté de la vie municipal</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dits règlementaires (à portée général et impersonnel)</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg text-green-800 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">
+                            04 documents
+                        </a>
+                    </div>
+                </div>
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Actes administratifs</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg text-green-800 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">
+                            documents
+                        </a>
+                    </div>
+                </div>
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Imposition local</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg text-green-800 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">
+                            documents
+                        </a>
+                    </div>
+                </div>
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Plan de financement des projets municipaux</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Avec le soutiens des partenaires institutionnels</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium rounded-lg text-green-800 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">
+                            documents
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

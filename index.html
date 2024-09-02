@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/src/output.css" />
+    <style>
+        body {
+        background-image: url('./assets/images/route3.jpg');
+        background-size: cover; /* Ajuste l'image pour couvrir toute la div */
+        background-position: center; /* Centre l'image */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            background-color: #0000009a;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+        @keyframes ripple {
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            70% {
+                transform: scale(1.1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.3);
+                opacity: 0;
+            }
+        }
+
+        .animate-ripple {
+        animation: ripple 1.5s infinite;
+        }
+    </style>
+</head>
+<body class="bg-custom-image">
+    <div class="flex w-full m-8 justify-center items-center">
+        <div>
+            <div class="flex w-full justify-center items-center">
+                <div class="m-8">
+                    <img class="h-24" src="./assets/images/logo.png" alt="">
+                    <div class="m-3">
+                        <h2 class="text-white text-4xl uppercase font-light">Mairie test</h2>
+                        <p class="text-base text-white mt-1">Consulter l'affichage legal, les liens utiles, l'agenda de votre commune, </p>
+                    </div>
+                </div>
+                <div class="text-white text-3xl">
+                    <div class="flex items-center justify-center">
+                        <a href="./accueil.html" id="ripple-button" class="relative flex items-center justify-center w-[25rem] h-[25rem] text-gray-700 bg-gray-100 rounded-full shadow-lg focus:outline-none">
+                            <img class="h-14" src="./assets/images/icons/cursor-finger.png" alt="">
+                                Toucher l'écran
+                            <span class="absolute w-full h-full rounded-full border-[2rem] border-gray-100 animate-ripple"></span>
+                            <span class="absolute w-full h-full rounded-full border-[1.7rem] border-gray-300 animate-ripple"></span>
+                        </a> 
+                    </div>
+                </div>    
+            </div>        
+        </div>
+    </div>
+    
+
+</body>
+</html>

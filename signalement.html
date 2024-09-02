@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/src/output.css" />
+    <style>
+        body {
+        background-image: url('./assets/images/route3.jpg');
+        background-size: cover; /* Ajuste l'image pour couvrir toute la div */
+        background-position: center; /* Centre l'image */
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(4px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-custom-image">
+    <div class="content-card">
+        <div class="top-0 h-screen sticky">
+          <ul class="py-2 px-2 space-y-1 min-h-[30rem] max-w-[7.38rem] bg-white font-bold text-[10px] border uppercase border-gray-200 rounded-br-xl shadow dark:bg-gray-800 dark:border-gray-700">
+            <li>
+              <a href="./index.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/house-chimney.png" alt="image" srcset="">
+                <span>accueil</span>
+              </a>
+            </li>
+            <li>
+              <a href="./affichage.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/legal.png" alt="image" srcset="">
+                <span>affichage legal</span>
+              </a>
+            </li>
+            <li>
+              <a href="./site.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/site-alt.png" alt="image" srcset="">
+                <span>site internet</span>
+              </a>
+            </li>
+            <li>
+              <a href="./agenda.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/diary-clasp.png" alt="image" srcset="">
+                <span>agenda</span>
+              </a>
+            </li>
+            <li>
+              <a href="./enquete.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/discover.png" alt="image" srcset="">
+                <span>enquête publique</span>
+              </a>
+            </li>
+            <li>
+              <a href="./annuaire.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/folder-directory.png" alt="image" srcset="">
+                <span>annuaire</span>
+              </a>
+            </li>
+            <li>
+              <a href="./demande.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/daily-calendar.png" alt="image" srcset="">
+                <span>demande de rdv</span>
+              </a>
+            </li>
+            <li>
+              <a href="./formulaire.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-gray-50 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/form.png" alt="image" srcset="">
+                <span>formulaire</span>
+              </a>
+            </li>
+            <li>
+              <a href="./signalement.html" class="flex flex-col items-center justify-center text-center text-gray-900 rounded-lg py-2 px-6 bg-green-200 hover:bg-green-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                <img class="h-8 mb-2" src="./assets/images/icons/shield-exclamation.png" alt="image" srcset="">
+                <span>signalement</span>
+              </a>
+            </li>
+          </ul>
+          <div>
+          </div>
+        </div> 
+    </div>
+    <div class="flex w-full m-8 justify-center items-center">
+        <div class="">
+            <h2 class="font-bold text-white text-3xl">Signalement</h2>
+            <span class="font-normal text-white pb-8">Vous avez constatez un probleme dans la commune ?</span>
+            
+            <div>
+                <form class="max-w-sm mx-auto">
+                    <div class="mb-3">
+                        <label for="nom" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom</label>
+                        <input type="text" id="nom" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="name@gmail.com" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="tel" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tel</label>
+                        <input type="text" id="tel" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="tel" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="objet" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">OBJET DU MESSAGE</label>
+                        <input type="text" id="objet" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="objet" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="msg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">VOTRE MESSAGE</label>
+                        <textarea id="msg" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="VOTRE MESSAGE" required >
+                        </textarea>
+                    </div>
+                    <div class="flex items-start mb-3">
+                        <div class="flex items-center h-5">
+                            <input id="terms" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                        </div>
+                        <label for="terms" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a></label>
+                    </div>
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
